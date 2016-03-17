@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="KeePass">
-      <HintPath>C:\Program Files (x86)\KeePass Password Safe 2\KeePass.exe</HintPath>
+      <HintPath>E:\Personal\KeePass\KeePass.exe</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
@@ -99,6 +99,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\earth_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\domain-public-suffix\domain-public-suffix.csproj">
+      <Project>{30f13e9b-61e5-4a67-be8b-659660b76c31}</Project>
+      <Name>domain-public-suffix</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

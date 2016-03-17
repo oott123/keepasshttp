@@ -1,7 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C# Express 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeePassHttp", "KeePassHttp\KeePassHttp.csproj", "{9DFAB9D7-6BB5-4C6C-86EC-C67B494008D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "domain-public-suffix", "domain-public-suffix\domain-public-suffix.csproj", "{30F13E9B-61E5-4A67-BE8B-659660B76C31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +17,10 @@ Global
 		{9DFAB9D7-6BB5-4C6C-86EC-C67B494008D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DFAB9D7-6BB5-4C6C-86EC-C67B494008D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DFAB9D7-6BB5-4C6C-86EC-C67B494008D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30F13E9B-61E5-4A67-BE8B-659660B76C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30F13E9B-61E5-4A67-BE8B-659660B76C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30F13E9B-61E5-4A67-BE8B-659660B76C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30F13E9B-61E5-4A67-BE8B-659660B76C31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

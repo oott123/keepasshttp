@@ -746,19 +746,12 @@ namespace KeePassHttp
             string submithost = null;
             if (r.SubmitUrl != null)
                 submithost = GetHost(CryptoTransform(r.SubmitUrl, true, false, aes, CMode.DECRYPT));
-
-            string baseUrl = url;
-            // index bigger than https:// <-- this slash
-            if (baseUrl.LastIndexOf("/") > 9)
-            {
-                baseUrl = baseUrl.Substring(0, baseUrl.LastIndexOf("/") + 1);
-            }
-
+            
             PwEntry entry = new PwEntry(true, true);
             entry.Strings.Set(PwDefs.TitleField, new ProtectedString(false, urlHost));
             entry.Strings.Set(PwDefs.UserNameField, new ProtectedString(false, username));
             entry.Strings.Set(PwDefs.PasswordField, new ProtectedString(true, password));
-            entry.Strings.Set(PwDefs.UrlField, new ProtectedString(true, baseUrl));
+            entry.Strings.Set(PwDefs.UrlField, new ProtectedString(true, url));
 
             if ((submithost != null && urlHost != submithost) || realm != null)
             {
